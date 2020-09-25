@@ -12,6 +12,7 @@
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
   <!-- Custom fonts for this template -->
   <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
@@ -25,9 +26,9 @@
     #skills{
                     font-family: 'Dancing Script', cursive;}
     .animated {
-  animation-duration: 2.5s;
+  animation-duration: 1.5s;
   animation-fill-mode: both;
-  animation-iteration-count: infinite;
+  animation-iteration-count: ;
 }
 
 @keyframes bounce {
@@ -38,6 +39,16 @@
 .bounce {
   animation-name: bounce;
 }
+    
+    .curs{
+      font-size:40px; 
+  margin: 10px 50px; 
+  letter-spacing: 6px; 
+  font-weight: bold;  
+    }
+    /*.animated zoomIn{
+        animation-iteration-count: none !important;
+    }*/
     </style>
 </head>
 
@@ -84,17 +95,17 @@
 
   <div class="container">
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center animated fadeInDownBig" id="about">
       <div class="w-100">
-        <h1 class="mb-0">Vineet
+        <!--<h1 class="mb-0 typewriter-text">Vineet
           <span class="text-primary">Jaiswal</span>
-          </h1>
+          </h1>-->
+          <div id="typedtext" class="curs"></div>
           
-          
-          <div class="subheading mb-5"><i class='fas fa-map-marker-alt'>  B/401 maitry apt · hanuman nagar nallasopara west, 401203</i><br>
+          <div class="subheading mb-5"><i class='fas fa-map-marker-alt'><span style="text-transform: lowercase;">  B/401 maitry apt · hanuman nagar nallasopara west, 401203</span></i><br>
               <i class="fa fa-phone" aria-hidden="true">
               (91) 8668907202/9892572934 ·</i><br>
-              <a href="mailto:vineetjaiswal2016@gmail.com"><i class="fa fa-envelope">  vineetjaiswal1998@gmail.com</i></a>
+              <a href="mailto:vineetjaiswal2016@gmail.com"><i class="fa fa-envelope"> <span style="text-transform: lowercase;"> vineetjaiswal1998@gmail.com</span></i></a>
               <a href="https://github.com/Vineet66"><p style="text-transform: lowercase;"> <i class="fab fa-github"> github.com/vineetjaiswal66</i></p></a>
           </div><div style="margin-left: 00px;">
           <a class="nav-link js-scroll-trigger" href="resume1.pdf"download>
@@ -114,7 +125,7 @@
       <div class="w-100">
         <h2 class="mb-5">Experience</h2>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5 wow zoomIn">
           <div class="resume-content">
             <h3 class="mb-0">junior Web Developer at The IIS Solution</h3>
             <div class="subheading mb-4"></div>
@@ -126,7 +137,7 @@
           </div>
         </div>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5 wow zoomIn">
           <div class="resume-content">
             <h2 class="mb-0">Projects</h2>
             <div class="subheading mb-3"><h3>3 Minor and 2 Major Projects Done</h3></div>
@@ -159,7 +170,7 @@
 
     <hr class="m-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center wow zoomIn" id="education">
       <div class="w-100">
         <h2 class="mb-5 animated infinite bounce delay-1s">Education</h2>
 
@@ -201,9 +212,9 @@
 
     <hr class="m-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center wow zoomIn" id="skills">
       <div class="w-100">
-        <h2 class="mb-5 animated infinite shake delay-1s">Skills</h2>
+        <h2 class="mb-5 animated shake delay-1s">Skills</h2>
 
         <div class="subheading mb-3">Programming Languages &amp; Tools</div>
           <ul class="list-inline dev-icons" style="font-size: 3rem;">
@@ -259,7 +270,7 @@
 
     <hr class="m-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center wow zoomIn" id="interests">
       <div class="w-100">
         <h2 class="mb-5">Interests</h2>
         <p style="font-size: 20px;">Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an climber. During the warmer months here in Mumbai, I enjoy  biking, free climbing.</p>
@@ -269,7 +280,7 @@
 
     <hr class="m-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center wow zoomIn" id="awards">
       <div class="w-100">
         <h2 class="mb-5 animated infinite bounce delay-1s">Awards &amp; Certifications</h2>
         <ul class="fa-ul mb-0">
@@ -305,7 +316,54 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/resume.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>
+<script>
+    new WOW().init();
+    
+    </script>
+    <script>
+    
+    // set up text to print, each item in array is new line
+var aText = new Array(
+" Vineet Jaiswal"/*, 
+"Those who understand binary, and those who don't"*/
+);
+var iSpeed = 100; // time delay of print out
+var iIndex = 0; // start printing array at this posision
+var iArrLength = aText[0].length; // the length of the text array
+var iScrollAt = 20; // start scrolling up at this many lines
+ 
+var iTextPos = 0; // initialise text position
+var sContents = ''; // initialise contents variable
+var iRow; // initialise current row
+ 
+function typewriter()
+{
+ sContents =  ' ';
+ iRow = Math.max(0, iIndex-iScrollAt);
+ var destination = document.getElementById("typedtext");
+ 
+ while ( iRow < iIndex ) {
+  sContents += aText[iRow++] + '<br />';
+ }
+ destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos);
+ if ( iTextPos++ == iArrLength ) {
+  iTextPos = 0;
+  iIndex++;
+  if ( iIndex != aText.length ) {
+   iArrLength = aText[iIndex].length;
+   setTimeout("typewriter()", 3000);
+  }
+ } else {
+  setTimeout("typewriter()", iSpeed);
+ }
+}
 
+
+typewriter();
+    
+    
+    </script>
 </body>
 
 </html>
