@@ -25,14 +25,29 @@ h5,
 h6 {
   font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: ;
   color: #343a40;
 }
 
 h1 {
   font-size: 6rem;
-  line-height: 5.5rem;
+    line-height: 5.5rem;
 }
+
+    /*animation: type 3s steps(14);
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid black;
+    width: 14ch;
+}
+.@keyframes:type{
+    0%{
+        width: 0ch;
+    }
+    100%{
+        width: 14ch;
+    }
+}*/
 
 h2 {
   font-size: 3.5rem;
@@ -48,7 +63,7 @@ p.lead {
 }
 
 .subheading {
-  text-transform: uppercase;
+  text-transform: ;
   font-weight: 500;
   font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-size: 1.5rem;
@@ -86,7 +101,7 @@ p.lead {
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
   letter-spacing: 0.05rem;
-  text-transform: uppercase;
+  text-transform: ;
 }
 
 #sideNav .navbar-toggler:focus {
@@ -174,3 +189,5 @@ a {
 a:hover, a:focus, a:active {
   color: #824027;
 }
+
+
